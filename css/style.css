@@ -1,16 +1,20 @@
-* {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #777777;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 50px;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 5rem;
   background-color: white;
 }
 
@@ -26,10 +30,10 @@ body {
 }
 .header__logo {
   position: absolute;
-  left: 50px;
-  top: 50px;
-  height: 70px;
-  width: 56px;
+  left: 5rem;
+  top: 5rem;
+  height: 7rem;
+  width: 5.6rem;
 }
 .header__box {
   position: absolute;
@@ -46,11 +50,11 @@ body {
 .title-first__main {
   display: block;
   font-weight: 800;
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: 10px;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   animation-name: leftToRight;
   animation-duration: 2s;
   animation-delay: 2s;
@@ -60,10 +64,10 @@ body {
 .title-first__secondary {
   display: block;
   font-weight: 100;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 5px;
-  margin-bottom: 65px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 6.5rem;
   animation-name: rightToLeft;
   animation-duration: 2s;
   animation-delay: 2s;
@@ -74,12 +78,13 @@ body {
 .btn:link, .btn:visited {
   display: inline-block;
   position: relative;
+  font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
   background-color: white;
-  padding: 15px 40px;
-  border-radius: 50px;
+  padding: 1.5rem 4rem;
+  border-radius: 5rem;
   transition: all 0.3s;
 }
 .btn:hover {
@@ -102,7 +107,7 @@ body {
   background: white;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 5rem;
   display: inline-block;
   z-index: -1;
   transition: all 0.4s;
@@ -115,36 +120,36 @@ body {
 @keyframes btnUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
 }
 @keyframes leftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }
 @keyframes rightToLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }/*# sourceMappingURL=style.css.map */
