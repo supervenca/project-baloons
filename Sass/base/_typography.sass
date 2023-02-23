@@ -32,3 +32,18 @@ body
         animation-delay: 2s
         animation-timing-function: ease
         backface-visibility: hidden
+.title-secondary
+    display: inline-block
+    text-align: center
+    font-size: 3.6rem
+    letter-spacing: 1rem
+    font-weight: 800
+    text-transform: uppercase
+    background: linear-gradient(90.05deg, rgba($color-light-brown, 0.7) 0.03%, rgba($color-dark-brown, 0.7) 99.94%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all .4s
+    backface-visibility: hidden
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        text-shadow: $shadow-h2
