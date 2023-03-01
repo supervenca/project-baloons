@@ -222,6 +222,10 @@ body {
   transform: skewY(-7deg);
 }
 
+.section-tour {
+  padding: 21rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -337,4 +341,34 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
+}
+
+.tour-card {
+  height: 52rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.tour-card__side {
+  height: 52rem;
+  transition: 0.7s all ease-out;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  background: green;
+  transform: rotateY(180deg);
+  background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+}
+.tour-card__side_front {
+  background: yellow;
+  transform: rotateY(0deg);
+}
+.tour-card:hover .tour-card__side_front {
+  transform: rotateY(180deg);
+}
+.tour-card:hover .tour-card__side_back {
+  transform: rotateY(0deg);
 }/*# sourceMappingURL=style.css.map */

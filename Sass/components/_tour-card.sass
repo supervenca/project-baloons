@@ -1,0 +1,25 @@
+.tour-card
+    height: 52rem
+    perspective: 150rem
+    -moz-perspective: 150rem
+    position: relative
+    &__side
+        height: 52rem
+        transition: .7s all ease-out
+        color: black
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        backface-visibility: hidden
+        &_front
+            background: yellow
+            transform: rotateY(0deg)
+        &_back
+        background: green
+        transform: rotateY(180deg)
+        background: linear-gradient(120deg, rgba($color-light-brown, 0.7) 0.03%, rgba($color-dark-brown, 0.7) 99.94%)
+    &:hover &__side_front
+        transform: rotateY(180deg)
+    &:hover &__side_back
+        transform: rotateY(0deg)
