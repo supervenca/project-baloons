@@ -109,6 +109,9 @@ body {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
+.title-secondary_white {
+  color: #ffffff;
+}
 
 .title-third {
   font-size: 2rem;
@@ -210,7 +213,7 @@ body {
 
 .section-about {
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  margin-bottom: 15rem;
 }
 
 .section-adventure {
@@ -223,7 +226,12 @@ body {
 }
 
 .section-tour {
-  padding: 21rem;
+  padding-top: 21rem;
+  padding-bottom: 8rem;
+}
+
+.section-feedback {
+  padding-top: 8rem;
 }
 
 .row {
@@ -442,4 +450,30 @@ body {
 .tour-card__text_numbers {
   font-size: 6rem;
   font-weight: 500;
+}
+
+.feedback-card {
+  width: 75%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(-20deg);
+}
+.feedback-card > * {
+  transform: skewX(20deg);
+}
+.feedback-card_img {
+  width: 15rem;
+  height: 15rem;
+  background: green;
+  float: left;
+  border-radius: 10rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
+}
+.feedback-card_img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
