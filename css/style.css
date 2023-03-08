@@ -51,6 +51,8 @@ body {
 
 .container {
   background-color: #F7F7F7;
+  position: relative;
+  z-index: 0;
 }
 
 body {
@@ -231,7 +233,8 @@ body {
 }
 
 .section-feedback {
-  padding-top: 8rem;
+  padding: 8rem 0rem;
+  position: relative;
 }
 
 .row {
@@ -459,6 +462,7 @@ body {
   margin: 0 auto;
   padding: 6rem;
   transform: skewX(-20deg);
+  position: relative;
 }
 .feedback-card > * {
   transform: skewX(20deg);
@@ -466,14 +470,59 @@ body {
 .feedback-card_img {
   width: 15rem;
   height: 15rem;
-  background: green;
   float: left;
   border-radius: 10rem;
   shape-outside: circle(50% at 50% 50%);
   -webkit-shape-outside: circle(50% at 50% 50%);
   margin-right: 4rem;
   overflow: hidden;
+  position: relative;
 }
 .feedback-card_img img {
   width: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.feedback-card_name {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weght: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.feedback-card:hover .feedback-card_name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.feedback-card:hover img {
+  transform: scale(1);
+  filter: blur(0.3rem) brightness(70%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
 }/*# sourceMappingURL=style.css.map */
