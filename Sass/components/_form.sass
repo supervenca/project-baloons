@@ -1,0 +1,77 @@
+.booking
+    height: 50rem
+    background: linear-gradient(115deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 57%, rgba(186,133,80,0.3) 57%, rgba(161,80,3,0.3) 100%), url(../img/bg-form.jpg) center / cover no-repeat
+    box-shadow: $box-shadow-active
+    border-radius: .5rem
+    overflow: hidden
+.form
+    width: 65%
+    padding-top: 5rem
+    padding-left: 5rem
+    &__group:not(:last-child)
+        margin-bottom: 1.8rem
+    &__group:nth-child(4)
+        margin-bottom: 4rem
+    &__input
+        color: $color-black
+        font-size: $font-size-paragraph
+        font-weight: 400
+        letter-spacing: .2rem
+        background: $color-white
+        padding: 2rem 0rem 2rem 2rem
+        border: none
+        border-bottom: solid .3rem transparent
+        border-radius: .5rem
+        width: 70%
+        &:focus
+            outline: none
+            border-bottom: solid .3rem #66D763
+            box-shadow: $box-shadow-active
+        &:focus:invalid
+            border-bottom: solid .3rem #D76363
+    &__label
+        font-size: $font-size-paragraph
+        font-weight: 400
+        letter-spacing: .2rem
+        display: block
+        margin-top: 1rem
+        margin-left: 1.5rem
+        transition: .3s all
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-3rem)
+    &__group-radio
+        width: 37%
+        display: inline-block
+    &__input-radio
+        visibility: hidden
+    &__label-radio
+        cursor: pointer
+        position: relative
+        padding-left: .1rem
+    &__button-radio
+        position: absolute
+        left: -2.3rem
+        top: 0rem
+        display: block
+        height: 2rem
+        width: 2rem
+        border-radius: 50%
+        border: solid .3rem $color-light-brown
+        &::after
+            content:""
+            display: block
+            height: 1rem
+            width: 1rem
+            border-radius: 50%
+            background: $color-light-brown
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            transition: .2s all
+            opacity: 0
+    //все псевдо-элементы, которые находятся по соседству с радио-кнопкой(тут - коричневый кружок)
+    &__input-radio:checked ~ &__label-radio &__button-radio::after
+        opacity: 1
