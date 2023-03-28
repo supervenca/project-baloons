@@ -8,4 +8,20 @@
         content: ""
         display: table
         clear: both
-    
+@mixin phone
+    @media (max-width: 600px)
+        @content
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+       @media (max-width: 600px)
+            @content
+    @if $breakpoint == tablet 
+        @media (max-width: 900px)
+            @content
+    @if $breakpoint == small-desktop 
+        @media (max-width: 1200px)
+            @content
+    @if $breakpoint == large-desktop 
+        @media (min-width: 1800px)
+            @content    
