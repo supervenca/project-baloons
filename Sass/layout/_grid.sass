@@ -5,21 +5,30 @@
     &:not(:last-child)
         margin-bottom: $margin-vertical-big
     @include clearfix
+    @include respond(small-desktop)
+        max-width: 90.1rem
 
 [class^="col-"]
     
     float: left
     &:not(:last-child)
         margin-right: $margin-horizontal
+    @include respond(small-desktop)
+        &:not(:last-child)
+            margin-right: 2rem
 
 .col-1-of-2
     width: calc((100% - #{$margin-horizontal}) / 2)
 .col-1-of-3
     width: calc((100% - 2 * #{$margin-horizontal}) / 3)
+    @include respond(small-desktop)
+        width: calc((100% - 2 * #{2rem}) / 3)
 .col-2-of-3
     width: calc(2 * ((100% - 2 * #{$margin-horizontal}) / 3) + #{$margin-horizontal})
 .col-1-of-4
     width: calc((100% - 3 * #{$margin-horizontal}) / 4)
+    @include respond(small-desktop)
+        width: calc((100% - 3 * #{2rem}) / 4)
 .col-2-of-4
     width: calc(2 * (100% - 3 * #{$margin-horizontal}) / 4 + #{$margin-horizontal})
 .col-3-of-4

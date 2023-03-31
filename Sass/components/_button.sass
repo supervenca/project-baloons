@@ -8,6 +8,9 @@
         border-radius: 5rem
         transition: all .3s
         border: none
+        @include respond(small-desktop)
+            font-size: 1.8rem
+            padding: 1.2rem 3.7rem
     &:hover
         transform: translateY(-0.4rem)
         box-shadow: $box-shadow-hover

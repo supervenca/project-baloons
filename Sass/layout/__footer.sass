@@ -12,6 +12,9 @@
             transform: scale(1.2)
         &:not(:last-child)
             margin-right: 5rem
+        @include respond(small-desktop)
+            &:not(:last-child)
+                margin-right: 1.6rem
     &__link
         text-decoration: none
         color: $color-white

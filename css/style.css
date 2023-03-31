@@ -43,7 +43,7 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  padding: 0rem;
+  padding: 5rem;
   background-color: #ffffff;
 }
 
@@ -100,6 +100,11 @@ body {
   animation-timing-function: ease;
   backface-visibility: hidden;
 }
+@media (max-width: 1240px) {
+  .title-first__main {
+    font-size: 4rem;
+  }
+}
 .title-first__secondary {
   display: block;
   font-weight: 100;
@@ -112,6 +117,12 @@ body {
   animation-delay: 2s;
   animation-timing-function: ease;
   backface-visibility: hidden;
+}
+@media (max-width: 1240px) {
+  .title-first__secondary {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 .title-secondary {
@@ -127,6 +138,11 @@ body {
   transition: all 0.4s;
   backface-visibility: hidden;
 }
+@media (max-width: 1240px) {
+  .title-secondary {
+    font-size: 3rem;
+  }
+}
 .title-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -141,12 +157,22 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (max-width: 1240px) {
+  .title-third {
+    font-size: 1.8rem;
+  }
+}
 
 .paragraph {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   line-height: 140%;
   font-weight: 400;
+}
+@media (max-width: 1240px) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 .text-align-center {
@@ -181,6 +207,12 @@ body {
   border-radius: 5rem;
   transition: all 0.3s;
   border: none;
+}
+@media (max-width: 1240px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 3.7rem;
+  }
 }
 .btn:hover {
   transform: translateY(-0.4rem);
@@ -230,8 +262,8 @@ body {
 }
 .header__logo {
   position: absolute;
-  left: 5rem;
-  top: 5rem;
+  left: 4rem;
+  top: 4rem;
   height: 7rem;
   width: 5.6rem;
 }
@@ -243,10 +275,20 @@ body {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 1240px) {
+  .header__box {
+    top: 50%;
+  }
+}
 
 .section-about {
   padding-top: 8rem;
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
+}
+@media (max-width: 1240px) {
+  .section-about {
+    margin-bottom: 13rem;
+  }
 }
 
 .section-adventure {
@@ -256,6 +298,11 @@ body {
 }
 .section-adventure > * {
   transform: skewY(-7deg);
+}
+@media (max-width: 1240px) {
+  .section-adventure {
+    padding: 15rem 0;
+  }
 }
 
 .section-tour {
@@ -285,12 +332,22 @@ body {
   display: table;
   clear: both;
 }
+@media (max-width: 1240px) {
+  .row {
+    max-width: 90.1rem;
+  }
+}
 
 [class^=col-] {
   float: left;
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
 }
 
 .col-1-of-2 {
@@ -300,6 +357,11 @@ body {
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
+@media (max-width: 1240px) {
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+  }
+}
 
 .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
@@ -307,6 +369,11 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+@media (max-width: 1240px) {
+  .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+  }
 }
 
 .col-2-of-4 {
@@ -472,6 +539,11 @@ body {
 .tour-card__descr ul li:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 1240px) {
+  .tour-card__descr ul li {
+    font-size: 1.5rem;
+  }
+}
 .tour-card__backside-box {
   text-align: center;
   margin-top: 8.7rem;
@@ -571,15 +643,23 @@ body {
 }
 
 .form {
-  width: 65%;
+  width: 70%;
   padding-top: 5rem;
   padding-left: 5rem;
 }
 .form__group:not(:last-child) {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
 }
 .form__group:nth-child(4) {
   margin-bottom: 4rem;
+}
+@media (max-width: 1240px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .form__group:nth-child(4) {
+    margin-bottom: 2.5rem;
+  }
 }
 .form__input {
   color: #000000;
@@ -616,8 +696,18 @@ body {
   transform: translateY(-3rem);
 }
 .form__group-radio {
-  width: 37%;
   display: inline-block;
+}
+.form__group-radio:not(:last-child) {
+  margin-right: 2rem;
+}
+@media (max-width: 1240px) {
+  .form__group-radio {
+    display: block;
+  }
+  .form__group-radio:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 .form__input-radio {
   visibility: hidden;
@@ -675,6 +765,11 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 5rem;
 }
+@media (max-width: 1240px) {
+  .footer__item:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
 .footer__link {
   text-decoration: none;
   color: #ffffff;
@@ -698,8 +793,8 @@ body {
   height: 7rem;
   border-radius: 50%;
   position: fixed;
-  right: 5rem;
-  top: 5rem;
+  right: 7rem;
+  top: 7rem;
   z-index: 4;
   text-align: center;
   cursor: pointer;
@@ -710,8 +805,8 @@ body {
   border-radius: 50%;
   background: radial-gradient(#BA8554, #A14F03);
   position: fixed;
-  right: 5rem;
-  top: 5rem;
+  right: 7rem;
+  top: 7rem;
   z-index: 2;
   transition: all 0.3s;
 }

@@ -6,8 +6,8 @@
     
     &__logo
         position: absolute
-        left: 5rem
-        top: 5rem
+        left: 4rem
+        top: 4rem
         height: 7rem
         width: 5.6rem
     &__box
@@ -17,3 +17,6 @@
         transform: translate(-50%, -50%)
         width: 100%
         text-align: center
+        @include respond(small-desktop)
+            top: 50%
+        
