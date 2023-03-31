@@ -22,6 +22,10 @@ body
         backface-visibility: hidden
         @include respond(small-desktop)
             font-size: 4rem
+        @include respond(tablet)
+            font-size: 3.6rem
+            letter-spacing: .5rem
+            margin-bottom: 0
     &__secondary
         display: block
         font-weight: 100
@@ -37,6 +41,9 @@ body
         @include respond(small-desktop)
             font-size: 3.5rem
             margin-bottom: 3.5rem
+        @include respond(tablet)
+            font-size: 3.2rem
+            letter-spacing: .2rem
 .title-secondary
     display: inline-block
     text-align: center
@@ -51,6 +58,7 @@ body
     backface-visibility: hidden
     @include respond(small-desktop)
         font-size: 3rem
+        letter-spacing: .6rem
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
         text-shadow: $shadow-h2

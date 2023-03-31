@@ -105,6 +105,13 @@ body {
     font-size: 4rem;
   }
 }
+@media (max-width: 900px) {
+  .title-first__main {
+    font-size: 3.6rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0;
+  }
+}
 .title-first__secondary {
   display: block;
   font-weight: 100;
@@ -124,6 +131,12 @@ body {
     margin-bottom: 3.5rem;
   }
 }
+@media (max-width: 900px) {
+  .title-first__secondary {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
 
 .title-secondary {
   display: inline-block;
@@ -141,6 +154,7 @@ body {
 @media (max-width: 1240px) {
   .title-secondary {
     font-size: 3rem;
+    letter-spacing: 0.6rem;
   }
 }
 .title-secondary:hover {
@@ -182,6 +196,11 @@ body {
 .margin-bottom-80px {
   margin-bottom: 8rem;
 }
+@media (max-width: 900px) {
+  .margin-bottom-80px {
+    margin-bottom: 5rem;
+  }
+}
 
 .margin-bottom-10px {
   margin-bottom: 1rem;
@@ -212,6 +231,11 @@ body {
   .btn, .btn:link, .btn:visited {
     font-size: 1.8rem;
     padding: 1.2rem 3.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .btn, .btn:link, .btn:visited {
+    padding: 2rem 5rem;
   }
 }
 .btn:hover {
@@ -290,6 +314,11 @@ body {
     margin-bottom: 13rem;
   }
 }
+@media (max-width: 900px) {
+  .section-about {
+    margin-bottom: 40rem;
+  }
+}
 
 .section-adventure {
   padding: 21rem 0;
@@ -327,6 +356,11 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
+@media (max-width: 1240px) {
+  .row:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
 .row::after {
   content: "";
   display: table;
@@ -337,16 +371,9 @@ body {
     max-width: 90.1rem;
   }
 }
-
-[class^=col-] {
-  float: left;
-}
-[class^=col-]:not(:last-child) {
-  margin-right: 6rem;
-}
-@media (max-width: 1240px) {
-  [class^=col-]:not(:last-child) {
-    margin-right: 2rem;
+@media (max-width: 900px) {
+  .row {
+    max-width: 60rem;
   }
 }
 
@@ -382,6 +409,25 @@ body {
 
 .col-3-of-4 {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+}
+
+[class^=col-] {
+  float: left;
+}
+[class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  [class^=col-] {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 4rem;
+  }
 }
 
 .btn-text:link, .btn-text:visited {
@@ -458,13 +504,18 @@ body {
 }
 
 .tour-card {
-  height: 52rem;
+  height: 50rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
 }
+@media (max-width: 900px) {
+  .tour-card {
+    height: 60rem;
+  }
+}
 .tour-card__side {
-  height: 52rem;
+  height: 50rem;
   transition: 0.7s all ease-out;
   color: black;
   position: absolute;
@@ -475,6 +526,11 @@ body {
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   overflow: hidden;
+}
+@media (max-width: 900px) {
+  .tour-card__side {
+    height: 60rem;
+  }
 }
 .tour-card__side_back {
   transform: rotateY(180deg);
@@ -503,6 +559,11 @@ body {
 .tour-card__img_3 {
   background: #BA8554 url(../img/tour-photo-3.jpg) center/cover no-repeat;
 }
+@media (max-width: 900px) {
+  .tour-card__img {
+    height: 30rem;
+  }
+}
 .tour-card__title {
   font-size: 2.8rem;
   letter-spacing: 0.2rem;
@@ -514,6 +575,12 @@ body {
   top: 17rem;
   right: 0rem;
 }
+@media (max-width: 900px) {
+  .tour-card__title {
+    top: 25rem;
+    font-size: 3.8rem;
+  }
+}
 .tour-card__span {
   background: linear-gradient(90deg, #BA8554, #A14F03);
   padding: 1rem 1.5rem 0.3rem 1.5rem;
@@ -522,6 +589,14 @@ body {
   position: absolute;
   top: 2.8rem;
   right: 0rem;
+}
+@media (max-width: 900px) {
+  .tour-card__span_2 {
+    top: 3.8rem;
+  }
+}
+.tour-card__descr {
+  margin-top: 8rem;
 }
 .tour-card__descr ul {
   list-style: none;
@@ -544,6 +619,11 @@ body {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 900px) {
+  .tour-card__descr ul li {
+    font-size: 2rem;
+  }
+}
 .tour-card__backside-box {
   text-align: center;
   margin-top: 8.7rem;
@@ -558,6 +638,11 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
 }
+@media (max-width: 900px) {
+  .tour-card__text_letters {
+    font-size: 3rem;
+  }
+}
 .tour-card__text_numbers {
   font-size: 6rem;
   font-weight: 500;
@@ -569,11 +654,23 @@ body {
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   padding: 6rem;
-  transform: skewX(-20deg);
+  transform: skewX(330deg);
   position: relative;
 }
+@media (max-width: 900px) {
+  .feedback-card {
+    transform: skewX(350deg);
+    padding: 3rem;
+  }
+}
 .feedback-card > * {
-  transform: skewX(20deg);
+  transform: skewX(-330deg);
+}
+@media (max-width: 900px) {
+  .feedback-card > * {
+    transform: skewX(-350deg);
+    text-align: center;
+  }
 }
 .feedback-card_img {
   width: 15rem;
@@ -585,6 +682,13 @@ body {
   margin-right: 4rem;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 900px) {
+  .feedback-card_img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
 }
 .feedback-card_img img {
   width: 100%;
@@ -641,11 +745,23 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+@media (max-width: 900px) {
+  .booking {
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(186, 133, 80, 0.3) 100%, rgba(161, 80, 3, 0.3) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  }
+}
 
 .form {
   width: 70%;
   padding-top: 5rem;
   padding-left: 5rem;
+}
+@media (max-width: 900px) {
+  .form {
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
 }
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
@@ -672,6 +788,12 @@ body {
   border-bottom: solid 0.3rem transparent;
   border-radius: 0.5rem;
   width: 70%;
+}
+@media (max-width: 900px) {
+  .form__input {
+    width: 90%;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+  }
 }
 .form__input:focus {
   outline: none;
@@ -770,6 +892,11 @@ body {
     margin-right: 1.6rem;
   }
 }
+@media (max-width: 900px) {
+  .footer__item {
+    margin: 3rem;
+  }
+}
 .footer__link {
   text-decoration: none;
   color: #ffffff;
@@ -793,11 +920,12 @@ body {
   height: 7rem;
   border-radius: 50%;
   position: fixed;
-  right: 7rem;
-  top: 7rem;
+  right: 9rem;
+  top: 9rem;
   z-index: 4;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 .navigation__background {
   width: 7rem;
@@ -805,8 +933,8 @@ body {
   border-radius: 50%;
   background: radial-gradient(#BA8554, #A14F03);
   position: fixed;
-  right: 7rem;
-  top: 7rem;
+  right: 9rem;
+  top: 9rem;
   z-index: 2;
   transition: all 0.3s;
 }

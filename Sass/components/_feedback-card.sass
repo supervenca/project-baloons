@@ -4,10 +4,16 @@
     box-shadow: $box-shadow-active
     margin: 0 auto
     padding: 6rem
-    transform: skewX(-20deg)
+    transform: skewX(330deg)
+    @include respond(tablet)
+        transform: skewX(350deg)
+        padding: 3rem
     position: relative
     & > *
-        transform: skewX(20deg)
+        transform: skewX(-330deg)
+        @include respond(tablet)
+            transform: skewX(-350deg)
+            text-align: center
     &_img
         width: 15rem
         height: 15rem
@@ -18,6 +24,10 @@
         margin-right: 4rem
         overflow: hidden
         position: relative
+        @include respond(tablet)
+            float: none
+            margin: 0 auto
+            margin-bottom: 3rem
         img
             width: 100%
             transform: scale(1.2)
