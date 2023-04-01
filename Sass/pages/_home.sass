@@ -16,9 +16,14 @@
 .section-tour
     padding-top: 21rem
     padding-bottom: 8rem
+    & > .text-align-center > .btn
+        @include respond(tablet)
+            visibility: hidden
 .section-feedback
     padding: 8rem 0rem
     position: relative
 .section-booking
     background: linear-gradient(90.05deg, $color-light-brown, $color-dark-brown)
     padding: 10rem
+    @include respond(tablet)
+        padding: 4rem

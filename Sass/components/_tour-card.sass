@@ -4,7 +4,7 @@
     -moz-perspective: 150rem
     position: relative
     @include respond(tablet)
-        height: 60rem
+        height: auto
     &__side
         height: 50rem
         transition: .7s all ease-out
@@ -18,15 +18,22 @@
         border-radius: .5rem
         overflow: hidden
         @include respond(tablet)
-            height: 60rem
+            height: auto
+            position: relative
+            padding-bottom: 10rem
         &_front
             //transform: rotateY(0deg)
         &_back
             transform: rotateY(180deg)
             background: linear-gradient(120deg, $color-light-brown, $color-dark-brown)
             visibility: hidden
+            @include respond(tablet)
+                transform: rotateY(0deg)
+                visibility: visible
     &:hover &__side_front
         transform: rotateY(180deg)
+        @include respond(tablet)
+                transform: rotateY(0deg)
     &:hover &__side_back
         transform: rotateY(0deg)
         visibility: visible

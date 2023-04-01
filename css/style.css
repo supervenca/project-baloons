@@ -338,6 +338,11 @@ body {
   padding-top: 21rem;
   padding-bottom: 8rem;
 }
+@media (max-width: 900px) {
+  .section-tour > .text-align-center > .btn {
+    visibility: hidden;
+  }
+}
 
 .section-feedback {
   padding: 8rem 0rem;
@@ -347,6 +352,11 @@ body {
 .section-booking {
   background: linear-gradient(90.05deg, #BA8554, #A14F03);
   padding: 10rem;
+}
+@media (max-width: 900px) {
+  .section-booking {
+    padding: 4rem;
+  }
 }
 
 .row {
@@ -511,7 +521,7 @@ body {
 }
 @media (max-width: 900px) {
   .tour-card {
-    height: 60rem;
+    height: auto;
   }
 }
 .tour-card__side {
@@ -529,7 +539,9 @@ body {
 }
 @media (max-width: 900px) {
   .tour-card__side {
-    height: 60rem;
+    height: auto;
+    position: relative;
+    padding-bottom: 10rem;
   }
 }
 .tour-card__side_back {
@@ -537,8 +549,19 @@ body {
   background: linear-gradient(120deg, #BA8554, #A14F03);
   visibility: hidden;
 }
+@media (max-width: 900px) {
+  .tour-card__side_back {
+    transform: rotateY(0deg);
+    visibility: visible;
+  }
+}
 .tour-card:hover .tour-card__side_front {
   transform: rotateY(180deg);
+}
+@media (max-width: 900px) {
+  .tour-card:hover .tour-card__side_front {
+    transform: rotateY(0deg);
+  }
 }
 .tour-card:hover .tour-card__side_back {
   transform: rotateY(0deg);
