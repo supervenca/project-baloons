@@ -17,7 +17,8 @@ html
 body
     padding: 5rem
     background-color: $color-white
-
+    @include respond(tablet)
+        padding: 0
 .container
     background-color: $color-grey-light
     position: relative

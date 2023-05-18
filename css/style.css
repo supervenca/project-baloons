@@ -68,6 +68,11 @@ body {
   padding: 5rem;
   background-color: #ffffff;
 }
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+}
 
 .container {
   background-color: #F7F7F7;
@@ -992,6 +997,8 @@ body {
 }
 .navigation__item {
   text-align: center;
+}
+.navigation__item:not(:last-child) {
   margin-bottom: 5rem;
 }
 .navigation__link:link, .navigation__link:visited {
@@ -1091,6 +1098,7 @@ body {
   right: 2rem;
   font-size: 2.7rem;
   font-weight: 700;
+  border: none;
   background-color: transparent;
   cursor: pointer;
 }
