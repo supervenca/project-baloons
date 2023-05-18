@@ -13,6 +13,9 @@
         text-align: center
         cursor: pointer
         box-shadow: $box-shadow-active
+        @include respond(phone)
+            right: 5rem
+            top: 6rem
     &__background
         width: 7rem
         height: 7rem
@@ -23,6 +26,9 @@
         top: 9rem
         z-index: 2
         transition: all .3s
+        @include respond(phone)
+            right: 5rem
+            top: 6rem
     &__nav
         height: 100vh
         width: 0

@@ -70,7 +70,7 @@ body {
 }
 @media only screen and (max-width: 900px) {
   body {
-    padding: 0;
+    padding: 1.5rem;
   }
 }
 
@@ -965,6 +965,12 @@ body {
   cursor: pointer;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 600px) {
+  .navigation__button {
+    right: 5rem;
+    top: 6rem;
+  }
+}
 .navigation__background {
   width: 7rem;
   height: 7rem;
@@ -975,6 +981,12 @@ body {
   top: 9rem;
   z-index: 2;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .navigation__background {
+    right: 5rem;
+    top: 6rem;
+  }
 }
 .navigation__nav {
   height: 100vh;
